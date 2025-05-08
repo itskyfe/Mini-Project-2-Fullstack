@@ -1,0 +1,154 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background-color: #2d1e17;
+  padding: 10px 0;
+  z-index: 5;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 15px 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.navbar li:hover {
+  background-color: #ce4e13;
+}
+
+/* First Page */
+.first-page {
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  padding: 40px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #f9f6f3, #c08b5c);
+}
+
+.text h1 {
+  font-size: 48px;
+  color: #2d2b2b;
+  margin-bottom: 10px;
+}
+
+.text h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #2d2b2b;
+  margin-bottom: 20px;
+}
+
+.text .highlight {
+  color: #ce4e13;
+}
+
+.text p {
+  color: #2d2b2b;
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #2d1e17;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button:hover {
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+  background: #ce4e13;
+}
+
+.image img {
+  width: 300px;
+  position: relative;
+  top: 42px;
+  z-index: 3;
+}
+
+/* Shapes (optional, make them decorative) */
+.shape1, .shape2 {
+  background-color: #a56947;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.shape1 {
+  width: 100px;
+  height: 100px;
+  top: 20%;
+  left: 10%;
+}
+
+.shape2 {
+  width: 150px;
+  height: 150px;
+  bottom: 35%;
+  right: 15%;
+}
+
+/* Second Page */
+.second-page {
+  margin-top: 50px;
+  padding: 40px;
+  height: 500px;
+  background-color: #fff;
+  text-align: center;
+  background-color: #a56947;
+}
+
+.second-page h1 {
+  font-size: 36px;
+  color: wheat;
+}
+
+
+.project1 img{
+  height: 200px;
+} 
+
+.project2 img{
+  height: 200px;
+}
+
+.project1{
+  position: relative;
+  top: 60px;
+  right: 350px;
+}
+
+.project2{
+  position: relative;
+  bottom: 180px;
+  left: 300px;
+}
