@@ -1,0 +1,313 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/***************************************************/
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Navbar */
+li {
+  display: inline-block;
+  padding: 5px;
+}
+
+li a {
+  text-decoration: none;
+  padding: 3px;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar {
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+  width: 1080px;
+  background-color: #441b10;
+  border-radius: 25px;
+  position: fixed;
+  right: 150px;
+  z-index: 10;
+}
+
+li :hover {
+  background-color: #ce4e13;
+  border-radius: 5px;
+}
+
+/* First Page */
+.first-page {
+  height: 450px;
+  background-color: white;
+  padding: 50px 80px;
+  align-items: center;
+}
+
+.first-page-text {
+  width: 600px;
+  margin-top: 130px;
+  margin-left: 80px;
+}
+
+.first-page-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.first-page-text h2 {
+  font-size: 32px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.name-highlight {
+  color: #ce4e13;
+}
+
+.first-page-text p {
+  margin: 10px 0;
+  font-size: 18px;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.button {
+  background-color: #d16d23;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+  background-color: #2d1e17;
+}
+
+.first-image img {
+  width: 320px;
+  height: auto;
+}
+
+.first-image {
+  position: absolute;
+  top: 84px;
+  right: 150px;
+  z-index: 3;
+}
+
+.shape1,
+.shape2 {
+  background-color: #d16d23;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.shape1 {
+  width: 100px;
+  height: 100px;
+  top: 70px;
+  left: 80px;
+  z-index: 1;
+}
+
+.shape2 {
+  width: 200px;
+  height: 200px;
+  top: 180px;
+  right: 250px;
+  z-index: 1;
+}
+
+/*Second Page*/
+.second-page {
+  width: 100%;
+  height: 500px;
+  background-color: #441b10;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.second-page h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.second-page h2 .highlight {
+  color: #d16d23;
+}
+
+/* Container untuk seluruh cards */
+.cards {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.card-wrapper {
+  width: 250px;
+  background-color: #12161e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px black;
+}
+
+.card-wrapper img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-info {
+  padding: 15px;
+  background-color: white;
+  text-align: center;
+}
+
+.card-info h3 {
+  color: #ce4e13;
+  margin: 10px 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-info p {
+  font-size: 14px;
+  color: #441b10;
+  margin: 0;
+}
+
+/*Third Page*/
+.third-page {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.third-page h2 {
+  background-color: #d46c21;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px;
+  gap: 60px;
+}
+
+.about-me {
+  width: 50%;
+}
+
+.about-me p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #111;
+}
+
+.soft-skills {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 15px;
+}
+
+.skill-logo {
+  width: 80px;
+  height: auto;
+}
+
+.copyright {
+  width: 100%;
+  height: 100px;
+  background-color: #441b10;
+  color: white;
+}
+
+.copyright p {
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
